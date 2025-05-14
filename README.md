@@ -38,6 +38,35 @@ The project covers:
 
 ---
 
+### 📊 Extra results
+We used some augmentations for better generalization with PGD and got the following results
+
+#### 🔹 ResNet-34 Performance (Source Model)
+
+| Attack Type | Top-1 Accuracy | Top-5 Accuracy | Accuracy Drop |
+|-------------|----------------|----------------|----------------|
+| PGD         | 0.20%          | 8.80%          | 99.7%          |
+| Patch       | 26.20%         | 65.00%         | 65.5%          |
+
+---
+
+#### 🔹 DenseNet-121 Performance (Transfer Evaluation)
+
+| Dataset            | Top-1 Accuracy | Top-5 Accuracy |
+|--------------------|----------------|----------------|
+| PGD Adversarial    | 52.00%         | 82.60%         |
+| Patch Adversarial  | 64.20%         | 87.40%         |
+
+---
+
+#### ✅ Attack Effectiveness Summary
+
+| Attack | Target Accuracy Drop | Achieved | Status |
+|--------|-----------------------|----------|--------|
+| FGSM   | > 50%                | 92.1%    | ✅     |
+| PGD    | > 70%                | 99.7%    | ✅     |
+
+
 ## 📁 Project Structure
 
 ```
