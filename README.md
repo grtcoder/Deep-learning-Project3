@@ -38,6 +38,17 @@ The project covers:
 
 ---
 
+### Adversarial Examples
+
+**FGSM Attack**  
+![FGSM](images/FGSM.png)
+
+**PGD Attack**  
+![PGD](images/PGD.png)
+
+**Patch Attack**  
+![Patch](images/Patch_PGD.png)
+
 ### 📊 Extra results
 We used some augmentations for better generalization with PGD and got the following results
 
